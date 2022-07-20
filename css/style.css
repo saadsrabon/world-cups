@@ -140,8 +140,8 @@ a{
 /* Dynamic Section */
 .dynamic-section{
     display: flex;
-    margin: 80px auto;
-    gap: 5%;
+    margin: 180px auto;
+    column-gap: 5%;
     
 }
 .blogs{
@@ -217,7 +217,65 @@ margin: 10px 0;
     margin: 0px 10px;
     color: rgba(22, 22, 22, 0.7);
 
+}.button{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px 0;
+    overflow: hidden;
 }
+.hidden-btn{
+    display: none;
+    text-align:center;
+}
+
+/* Footer Css */
+.footer{
+    margin-top:80px;
+    padding: 100px 60px;
+    background-color: #161616;
+    color: #fff;
+    text-align: center;
+}
+.footer h1{
+    font-size: 40px;
+    font-weight: 600;
+}
+.footer-menu{
+    display: flex;
+    justify-content: center;
+    margin-top:20px ;
+    width: 50%;
+    margin: 20px auto;
+    flex-wrap: wrap;
+    gap: 25px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1); ;
+    padding-top:50px ;
+   
+}
+.footer-menus{
+    display: flex;
+    justify-content: center;
+    margin-top:20px ;
+    width: 40%;
+    margin: 20px auto;
+    flex-wrap: wrap;
+    gap: 25px;
+    
+   
+}
+.footer-menu a, .footer-menus a , .social-icon a i {
+    color: rgba(185, 185, 185, 1);
+    font-size: 16px;
+
+}
+.social-icon a i{
+   color: #ffff;
+   padding: 0px 10px;
+   font-size: 18px;
+}
+
+
+
 /******* Responsive Css Start From Here ******/
 
 /* Desktop Device */
@@ -316,12 +374,19 @@ margin: 10px 0;
 .blogs{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    grid-template-rows:1fr;
+    grid-template-rows:1fr 1fr 1fr 1fr 650px;
     grid-gap: 3%;
 }
 
 .dynamic-section-right-side{
     width:100% ;
+    
+}
+.hidden-btn{
+    display: block;
+}
+.footer-menu{
+    width: 90%;
 }
 
     
@@ -403,15 +468,15 @@ margin: 10px 0;
         border: 1px solid rgba(22, 22, 22, 0.7);
 }
 .blogs{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows:1fr;
-    grid-gap: 3%;
+    display: block;
+   width: 100%;
+    
 }
 
 .dynamic-section-right-side{
     width:100% ;
 }
+
 
 
 
