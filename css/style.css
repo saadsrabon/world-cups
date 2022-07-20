@@ -1,0 +1,417 @@
+/* Fonts Imported */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* Global css  */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffff;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+}
+.btn{
+    padding: 16px 25px;
+    color: #ffff;
+    background: #DD0000;
+    display: inline-block;
+    transition: 0.2S ease;
+    -webkit-transition: 0.2S ease;
+    -moz-transition: 0.2S ease;
+    -ms-transition: 0.2S ease;
+    -o-transition: 0.2S ease;
+    border-radius:5px ;
+    -webkit-border-radius:5px ;
+    -moz-border-radius:5px ;
+    -ms-border-radius:5px ;
+    -o-border-radius:5px ;
+    font-size: 20px;
+    margin: 20px 0;
+}
+.btn:hover{
+    background: #ffff;
+    color: #DD0000;
+    outline: 1px solid #DD0000;
+
+}
+#active{
+ background: #DD0000;
+ color: #ffff;
+
+}
+
+
+/* Hero Section */
+.hero-section{
+    margin-top: 50px;
+    background: #161616;
+    padding: 50px 50px 0px 50px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    display: flex;
+    box-sizing: border-box;
+    
+  
+
+}
+.hero-section .hero-section-left{
+    width: 50%;
+    padding: 50px 0px 50px 30px;
+}
+.hero-section .hero-section-left h1{
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 80px;
+    color: #ffff;
+}
+.hero-section .hero-section-left h1::after{
+    content: "";
+    /*position: absolute;
+    */font-size: 70px;
+    line-height: 80px;
+    color: #ffff;
+    animation: changes 2s linear 2s infinite;
+    -webkit-animation: changes 2s linear 2s infinite;
+}
+
+@keyframes changes {
+    0%{
+        content: "|";
+    }
+   
+    10%{
+        content: "E|";
+    }
+   
+    30%{
+        content: "Ea|";
+    }
+   50%{
+    content: "Ear|";
+   }
+   70%{
+    content: "Eart|";
+   }
+   90%{
+    content: "Earth|";
+   }
+   95%{
+    content: "Earth.|";
+   }
+   100%{
+    content: "Earth.";
+   }
+    
+}
+
+.hero-section .hero-section-left .info{
+    padding: 20px 0px;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 26px;
+    text-align: left;
+}
+
+
+.hero-section .hero-section-right{
+    width: 50%;
+    background: url(/assets/Banner\ Image.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: contain;  
+}
+#mobile-p{
+    display: none;
+}
+
+/* Dynamic Section */
+.dynamic-section{
+    display: flex;
+    margin: 80px auto;
+    gap: 5%;
+    
+}
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-gap: 3%;
+}
+
+.dynamic-section-left-side{
+    width: 30%;
+    height: 300px;
+    background-color: #161616;
+    padding: 30px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    
+}
+.filter{
+    display: block;
+    text-align: center;
+    padding: 17px 30px;
+    font-size: 20px;
+    background-color: #ffff;
+    color: #161616;
+    border-radius:10px ;
+    -webkit-border-radius:10px ;
+    -moz-border-radius:10px ;
+    -ms-border-radius:10px ;
+    -o-border-radius:10px ;
+    margin: 20px 0;
+}
+.dynamic-section-right-side{
+    width:70% ;
+}
+
+.blog>img{
+    width: 100%;
+}
+
+.blog-btn{
+    display: inline-block;
+    border: 1.14px solid rgba(22, 22, 22, 1);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    color: #161616;
+    padding: 8px 15px;
+    margin: 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.blog-title{
+font-weight: 600;
+font-size: 20px;
+line-height: 30px;
+color: #161616;
+margin: 10px 0;
+}
+
+.icon-box{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.icon-box span{
+    margin: 0px 10px;
+    color: rgba(22, 22, 22, 0.7);
+
+}
+/******* Responsive Css Start From Here ******/
+
+/* Desktop Device */
+@media (min-width: 780px) and (max-width:1024px) {
+    .container{
+        width: 90%;
+    }
+    .hero-section{
+        
+        margin-top: 30px;
+    }
+
+    
+    .hero-section .hero-section-left{
+        padding: 0px 10px 0px 10px;
+    }
+.hero-section .hero-section-left h1 , .hero-section .hero-section-left h1::after{
+       font-size: 30px;
+    
+       line-height: 40px;
+       
+    }
+   
+    .hero-section .hero-section-left .info {
+       font-size: 14px;
+       padding: 5px;
+       line-height: 20px;
+       
+    }
+    .hero-section .hero-section-left .btn{
+        font-size: 16px;
+        padding: 12px;
+    }
+
+}
+
+/* Tablet Device */
+@media  (min-width:481px) and (max-width:768px) {
+    .container{
+        width: 90%;
+    }
+    .hero-section{
+        
+        margin-top: 30px;
+    }
+
+    
+    .hero-section .hero-section-left{
+        padding: 0px 10px 0px 10px;
+    }
+.hero-section .hero-section-left h1 , .hero-section .hero-section-left h1::after{
+       font-size: 30px;
+    
+       line-height: 40px;
+       
+    }
+   
+    .hero-section .hero-section-left .info {
+       font-size: 14px;
+       padding: 5px;
+       line-height: 20px;
+       
+    }
+    .hero-section .hero-section-left .btn{
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    /* Dynamic part for tablet Device */
+    .dynamic-section{
+        flex-direction: column;
+        margin: 50px auto;
+        gap: 2%;
+    }
+    .dynamic-section-left-side{
+        width: 100%;
+        padding: 0px; 
+        margin: 0 auto;  
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: none;
+        height: 100px;
+    }
+    .filter{
+        padding: 10px 30px;
+         width: 20%;
+        font-size: 14px;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        border: 1px solid rgba(22, 22, 22, 0.7);
+}
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows:1fr;
+    grid-gap: 3%;
+}
+
+.dynamic-section-right-side{
+    width:100% ;
+}
+
+    
+}
+
+
+/* ***** Mobile Device *****/
+
+@media (min-width:320px) and (max-width:480px) {
+    .container{
+        width: 95%;
+    }
+    .hero-section{
+        
+        margin-top: 20px;
+        flex-direction: column;
+    }
+
+    
+    .hero-section .hero-section-left{
+        padding: 0px 5px 0px 5px;
+        width: 100%;
+        text-align: center;
+    }
+    .hero-section .hero-section-right{
+        width: 100%;
+        height: 200px ;
+    }
+.hero-section .hero-section-left h1 , .hero-section .hero-section-left h1::after{
+       font-size: 30px;
+    
+       line-height: 35px;
+       text-align: center;
+       
+    }
+   
+    .hero-section .hero-section-left .info {
+       font-size: 14px;
+       padding: 5px;
+       line-height: 20px;
+       text-overflow: ellipsis;
+       display: none;
+    
+       
+    }
+    .hero-section .hero-section-left .btn{
+        font-size: 16px;
+        padding: 10px;
+    }
+    #mobile-p{
+        display: block;
+        text-align: center;
+        padding: 5px 0;
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+
+    /* Dynamic Part Responsive for mobile */
+
+    .dynamic-section{
+        flex-direction: column;
+        margin: 50px auto;
+        gap: 3%;
+    }
+    .dynamic-section-left-side{
+        width: 90%;
+        padding: 0px 10px; 
+        margin: 20px auto;  
+        background: none;
+    }
+    .filter{
+        padding: 10px 30px;
+        font-size: 14px;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        border: 1px solid rgba(22, 22, 22, 0.7);
+}
+.blogs{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows:1fr;
+    grid-gap: 3%;
+}
+
+.dynamic-section-right-side{
+    width:100% ;
+}
+
+
+
+}
