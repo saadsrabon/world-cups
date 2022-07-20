@@ -127,11 +127,12 @@ a{
 
 .hero-section .hero-section-right{
     width: 50%;
-    background: url(/assets/Banner\ Image.png);
+    background: url(/images/banner.png);
     background-repeat: no-repeat;
     background-position: bottom center;
     background-size: contain;  
 }
+
 #mobile-p{
     display: none;
 }
