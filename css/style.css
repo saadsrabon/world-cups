@@ -193,7 +193,7 @@ a{
     width:70% ;
 }
 
-.blog>img{
+.blog>img ,.blog-upcomming>img{
     width: 100%;
 }
 
@@ -322,7 +322,7 @@ margin: 10px 0;
         font-size: 16px;
         padding: 12px;
     }
-
+   
 }
 
 /* Tablet Device */
